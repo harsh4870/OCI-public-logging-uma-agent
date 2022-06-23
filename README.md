@@ -1,5 +1,5 @@
 # OCI-public-logging-uma-agent
-Oracle Kubernetes cluster with UMA agent logging to push logs from cluster to public logging service in OCI
+Oracle Kubernetes cluster with UMA agent logging to push logs from cluster's worker nodes to public logging service in OCI
 
 ## Getting Started
 These instructions will get you a pushing OKE cluster deployment logs to OCI public logging service using UMA agent.
