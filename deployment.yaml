@@ -1,0 +1,25 @@
+#Any log at custom application writing at /app_logs will get mounted to OKE node's /var/log/app_logs/<pod-name> 
+#further will get pushed from OKE node to OCI console
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: app
+    image: <App image>
+    env:
+      - name: pod_name
+        valueFrom:
+          fieldRef:
+            apiVersion: v1
+            fieldPath: metadata.name
+    volumeMounts:
+    - mountPath: /app_logs
+      name: app-logs
+      subPathExpr: $(pod_name)
+  volumes:
+  - name: mydir
+    hostPath:
+      path: /var/log/app_logs
+      type: DirectoryOrCreate
