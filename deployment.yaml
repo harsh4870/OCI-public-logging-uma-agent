@@ -1,5 +1,5 @@
 #Any log at custom application writing at /app_logs will get mounted to OKE node's /var/log/app_logs/<pod-name> 
-#Further will get pushed from OKE node to OCI console
+#Further will get pushed from OKE nodes to OCI logging console
 apiVersion: v1
 kind: Pod
 metadata:
