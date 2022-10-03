@@ -7,6 +7,8 @@ https://docs.oracle.com/en-us/iaas/Content/Logging/Concepts/custom_logs.htm#cust
 
 Blog : https://medium.com/@harsh.manvar111/oke-logging-with-uma-agent-in-oci-d6f55a8bcc02
 
+From OKE PODs to push the logs to the OCI logging. 
+
 
 ### Architecture
 ![alt text](https://github.com/harsh4870/OCI-public-logging-uma-agent/blob/main/uma.png)
